@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sports Car Rental Incident Report</title>
+    <link rel="stylesheet" type="text/css" href="Content/Site.css" />
+</head>
+<body>
+    <h1>Sports Car Rental Incident Form</h1>
+    <form method="post" action="http://sandbox.bittsdevelopment.com/humber/httpdebug/acceptdata.php">
+        <section>
+            <h2>Renter's Information</h2>
+            <label>First Name:</label>
+            <input type="text" id="renter_firstname" name="renter_firstname" />
+            <div>
+                <label>Last Name:</label>
+                <input type="text" id="renter_lastname" name="renter_lastname" />
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="text" id="renter_email" name="renter_email" />
+            </div>
+            <div>
+                <label>Address:</label>
+                <input type="text" id="renter_address" name="renter_address" />
+            </div>
+            <div>
+                <label>City:</label>
+                <input type="text" id="renter_city" name="renter_city" />
+            </div>
+            <div>
+                <label>Country:</label>
+                <input type="text" id="renter_country" name="renter_country" />
+            </div>
+            <div>
+                <label>Postal Code:</label>
+                <input type="text" id="renter_postalcode" name="renter_PostalCode" />
+            </div>
+            <div>
+                <label>phone:</label>
+                <input type="text" id="renter_phone" name="renter_phone" placeholder="(999)-212-2342" />
+            </div>
+        </section>
+        <section>
+            <h2>Licence and Car Details</h2>
+            <div>
+                <label>Renter's Car Licence Plate #:</label>
+                <input type="text" id="renter_licencenumber" name="renter_licencenumber" />
+            </div>
+            <div>
+                <label>Issued by:</label>
+                <input type="text" id="issued_authority" name="issued_authority" />
+            </div>
+            <div>
+                <label>Issued date:</label>
+                <input type="text" id="issued_date" name="issued_date" />
+            </div>
+            <div>
+                <label>Model:</label>
+                <input type="text" id="car_model" name="car_model" />
+            </div>
+            <div>
+                <label>Type:</label>
+                <select id="car_type" name="car_type">
+                    <option value="Sedan">sedan</option>
+                    <option value="SUV">SUV</option>
+                    <option value="Hatchback">Hatchback</option>
+                </select>
+
+            </div>
+        </section>
+        <section>
+            <h2>Damages if any?</h2>
+            <div><label>Damges to the third party vehicle:</label></div>
+            <div>
+
+                <input type="radio" value="Yes" id="renter_answer_1" name="renter_answer_1" />
+                <label for="renter_answer_1">Yes</label>
+            </div>
+            <div>
+
+                <input type="radio" value="No" id="renter_answer_2" name="renter_answer_2" />
+                <label for="renter_answer_2">No</label>
+            </div>
+            <div>
+                <label>Number of people in the car at the time of accident?</label>
+                <div>
+                    <input type="text" id="people_Incar" name="people_Incar" />
+                </div>
+            </div>
+            <div>
+                <label>If Reported to Police?</label>
+            </div>
+            <div>
+                <input type="checkbox" value="Yes" id="police_report" name="police_report" />
+                <label for="renter_choose_1">Yes</label>
+            </div>
+            <div>
+                <input type="checkbox" value="No" id="police_report_1" name="police_report_1" />
+                <label for="renter_choose_2">No</label>
+            </div>
+
+        </section>
+        <section>
+            <input type="submit" value="submit" />
+        </section>
+    </form>
+</body>
