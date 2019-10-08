@@ -11,7 +11,14 @@ namespace Assignment_1b_N01359582
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Page.IsPostBack)
+            {
+                Page.Validate();
+                if (Page.IsValid)
+                {
 
+                }
+            }
         }
     }
 }
